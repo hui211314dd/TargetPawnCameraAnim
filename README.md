@@ -1,1 +1,7 @@
 # TargetPawnCameraAnim
+
+## 简介
+实现了基于TargetPawn的相机动画，在CameraAnim进行相机编辑，所有的坐标位置都是基于Pawn的，播放时也按照Pawn进行相机动画播放。
+
+## todo
+如果项目有修改引擎的权限，还是建议修改引擎的CameraAnimInst的ApplyToView设置为virtual, 我这种实现方式有点绕，而且需要再单独处理PPBlend(我的实现里没有做，直接拷贝CameraManager中的ApplyAnimToCamera关于PPBlend的实现就可以了),如果ApplyToView是虚函数，则方便多了。
